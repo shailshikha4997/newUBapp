@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>
+        Login
+    </h1>
+    <form [formGroup]="user" (ngSubmit)="onSubmit()">
+        <div class="form-control">
+            <label>Your Email</label>
+            <input type="text" formControlName="email" required/>
+        </div>
+        <div class="form-control">
+            <label>Your password</label>
+            <input type="password" formControlName="password" required/>
+        </div>
+        <button class="btn">Submit</button>
+        <p class="text">Don't have an Account?
+            <a href="#">Create Account</a>
+        </p>
+    </form>
+</div>
